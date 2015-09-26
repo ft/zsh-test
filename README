@@ -1,0 +1,43 @@
+    ---------------------------------------------------
+      Zsh Setup for using zsh in its soruce directory
+    ---------------------------------------------------
+
+The .zshenv file contained within this repository can be used to run
+zsh from within its source directory. This is achieved by creating a
+local module directory followed by adjusting the module and function
+search path variables.
+
+To actually use the setup, adjust the $ZDOTDIR variable in the shell's
+parent process's environment:
+
+    % ZDOTDIR="$HOME/zsh-test" ./Src/zsh
+
+The included .zshrc file is just an example. If you want to test
+interactive features you probably want to make adjustments to that
+file. The rest in that file is really just to increase convenience.
+
+    ---------------------------------------------------
+
+This setup is shipped under the same terms as Zsh itself:
+
+Copyright (c) 2015 Frank Terbeck <ft@bewatermyfriend.org>
+All rights reserved.
+
+Permission is hereby granted, without written agreement and without
+license or royalty fees, to use, copy, modify, and distribute this
+software and to distribute modified versions of this software for any
+purpose, provided that the above copyright notice and the following
+two paragraphs appear in all copies of this software.
+
+In no event shall Frank Terbeck or the Zsh Development Group be liable
+to any party for direct, indirect, special, incidental, or consequential
+damages arising out of the use of this software and its documentation,
+even if Frank Terbeck and the Zsh Development Group have been advised of
+the possibility of such damage.
+
+Frank Terbeck and the Zsh Development Group specifically disclaim any
+warranties, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose.  The software
+provided hereunder is on an "as is" basis, and Frank Terbeck and the
+Zsh Development Group have no obligation to provide maintenance,
+support, updates, enhancements, or modifications.
