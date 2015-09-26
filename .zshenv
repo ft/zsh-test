@@ -2,6 +2,7 @@
 function is-zsh-source-root () {
     test -f README || return 1
     test -f .preconfig || return 1
+    test -f Src/zsh.h || return 1
     test -d Completion || return 1
     return 0
 }
