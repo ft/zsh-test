@@ -27,7 +27,8 @@ cd "$root" || exit 1
 
 # Setup the shell's load paths for functions and modules:
 fpath=( "${root}"/Completion
-        "${root}"/Completion/**/*(/) )
+        "${root}"/Completion/**/*(/)
+        "${root}"/Functions/**/*(/) )
 module_path=( "${root}/_modules_" )
 
 # Here's a plain prompt:
