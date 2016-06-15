@@ -7,6 +7,10 @@ zmodload zsh/parameter
 zmodload zsh/zle
 zmodload zsh/zleparameter
 
+# To test functions every now and then, add some function path entries, in case
+# they exist:
+fpath=( $ZDOTDIR/fpath/**/*(/N) "${fpath[@]}" )
+
 # Turn off the terminal's flow control feature:
 setopt no_flow_control
 
